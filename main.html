@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Block Texture Data</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="./js/find_texture.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <h2>Search for Block Data</h2>
+        <div class="v-center">
+            <label for="texture-name">Enter block name</label>
+            <span>
+                <input type="text" id="texture-name">
+                <input type="button" id="block-select" value="Select">
+            </span>
+            <h3 id="state-label" hidden>Block States</h3>
+            <div id="variant-selector"></div>
+            <input type="button" id="texture-search" value="Submit" hidden>
+        </div>
+        <h2 id="block-result-label" hidden>Block Data Results</h2>
+        <h3 id="model-images-label" hidden>Model Images</h3>
+        <div id="canvas-list"></div>
+    </body>
+</html>
